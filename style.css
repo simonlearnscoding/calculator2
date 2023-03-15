@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("/fonts/digital-dream.regular.ttf");
+}
+
+@font-face {
+  font-family: "roboto-thin";
+  src: url("/fonts/roboto.thin.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #292929;
+}
+.disabled {
+  opacity: 60%;
+}
+
+.disabled:hover {
+  opacity: 100%;
+}
+
+.inputFields {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.calculator {
+  margin: 40px auto 0 auto;
+  width: 520px;
+  height: 660px;
+  /*background-color: red; */
+  flex-direction: column;
+  padding: 0px;
+  /*background-color: darkslategray;*/
+}
+.screen {
+  width: 350px;
+  background-color: #d1d6cb;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 24px;
+  border-radius: 4px;
+  font-size: 32px;
+  font-family: digital-clock-font;
+  color: darkslategrey;
+}
+
+.return {
+  margin-left: auto;
+  margin-right: 8px;
+  margin-top: 16px;
+  background-color: #7a5a45;
+}
+
+.display {
+  display: flex;
+  flex-grow: 1;
+  height: 140px;
+  /*background-color: grey;*/
+}
+.buttons {
+  margin-left: 4px;
+}
+.operators {
+  margin-right: 4px;
+}
+
+.operators button {
+  background-color: #515755;
+}
+button {
+  height: 120px;
+  width: 120px;
+  margin: 4px;
+  background-color: #434746;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-family: roboto-thin;
+  font-size: 32px;
+  opacity: 60%;
+}
+
+button:hover {
+  opacity: 100%;
+}
